@@ -25,7 +25,7 @@ Be seeing you...
 ```
 
 Do not enter an empty line, as the book is too sparse to recognize the 2nd player win there.
-It does recognize the above 4 winning first-move replies though.
+It does recognize all 4 winning first-move replies (14,23,34,44) though.
 
 Scores are given for the side to move; - = + for a lost, drawn, or won position, respectively.
 Solutions requiring at least work BOOKWORK get permanently added to the opening book.
