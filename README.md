@@ -21,3 +21,5 @@ score +  work 15  513960 pos / 153 msec = 3359 Kpos/sec
 ^D
 Be seeing you...
 ```
+
+Scores are given for the side to move; - = + for a lost, drawn, or won position, respectively.
