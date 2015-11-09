@@ -24,5 +24,13 @@ score +  work 15  513960 pos / 153 msec = 3359 Kpos/sec
 Be seeing you...
 ```
 
+Do not enter an empty line, as the book is too sparse to recognize the 2nd player win there.
+It does recognize the above 4 winning first-move replies though.
+
 Scores are given for the side to move; - = + for a lost, drawn, or won position, respectively.
 Solutions requiring at least work BOOKWORK get permanently added to the opening book.
+
+With the default transposition table size of 8306069, the program uses just under 500MB of memory.
+Larger sizes increase the search efficiency. If you have at least 12GB of free memory,
+then you can compile with -DLOCKSIZE=42 -DTRANSIZE=1040187403 which reduces the size
+of hashtable entries from 14 to 12 bytes. 
