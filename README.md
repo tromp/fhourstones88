@@ -11,6 +11,8 @@ After running make, the program C488 repeatedly accepts lines containing digits 
 and will solve the resulting position. An example session:
 
 ```
+> make
+g++ -std=c++11 -O3 -Wextra -Wall -DWIDTH=8 -DHEIGHT=8 -DBOOKWORK=24 -DLOCKSIZE=50 -DTRANSIZE=8306069 C4.cpp Search.cpp Window.cpp -o C488
 > ./C488
 444445555
 Solving . . .    
@@ -23,3 +25,4 @@ Be seeing you...
 ```
 
 Scores are given for the side to move; - = + for a lost, drawn, or won position, respectively.
+Solutions requiring at least work BOOKWORK get permanently added to the opening book.
