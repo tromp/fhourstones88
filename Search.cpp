@@ -136,7 +136,7 @@ void Trans::Hashentry::store(locktype lock, score sc, int work) {
     return found ? it->second : nada;
   }
   void Book::bopen() {
-    bd = open(bookfile, O_CREAT|O_WRONLY|O_APPEND);
+    bd = open(bookfile, O_CREAT|O_WRONLY|O_APPEND, S_IRUSR|S_IWUSR);
     assert(bd >= 0);
   }
   void Book::bclose() {
