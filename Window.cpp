@@ -62,7 +62,7 @@
     printf("Solving . . .    \n");
     score result = search.solve();
     printf("score %c  work %d", "?-<=>+"[result], search.work);
-    printf("  %lu pos / %lu msec = %ld Kpos/sec\n", search.nodes, search.msecs, search.nodes/search.msecs);
+    printf("  %ju pos / %ju msec = %jd Kpos/sec\n", (uintmax_t)search.nodes, (uintmax_t)search.msecs, (intmax_t)search.nodes/search.msecs);
     return true;
   }
 
